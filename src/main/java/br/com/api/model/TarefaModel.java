@@ -49,7 +49,7 @@ public class TarefaModel {
 	
 	@Column(name = "NOME")
 	@NotNull(message = "Nome obrigatório")
-	@Size(min = 2, max = 50, message = "Nome deve conter entre 2 e 50 caracteres")
+	@Size(min = 2, max = 150, message = "Nome deve conter entre 2 e 50 caracteres")
 	public String getNomeTarefa() {
 		return nomeTarefa;
 	}
@@ -60,7 +60,7 @@ public class TarefaModel {
 	
 	@Column(name = "DESCRICAO")
 	@NotNull(message = "Descrição obrigatória")
-	@Size(min = 2, max = 50, message = "Descrição deve ser entre 2 e 50 caracteres")
+	@Size(min = 2, max = 150, message = "Descrição deve ser entre 2 e 50 caracteres")
 	public String getDescricao() {
 		return descricao;
 	}
